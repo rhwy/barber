@@ -1,0 +1,10 @@
+<h1>Sources</h1>
+<i>generated @DateTime.Now </i>
+
+<h2>@Model.Contributor.Name</h2>
+<ul>
+	@foreach(string site in Model.Sites.Links)
+	{
+	<li><a href="@site">@site</a></li>
+	}
+</ul>

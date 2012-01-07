@@ -1,0 +1,7 @@
+{
+	Contributor: 'Rui Json',
+	Sites : [
+		{ Name : 'Blog', Link : 'http://www.rui.fr' },
+		{ Name : 'Company', Link : 'http://www.artofnet.com' }
+		]
+}

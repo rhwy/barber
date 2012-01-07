@@ -1,0 +1,5 @@
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.RazorTemplateCommand.Configuration\obj\Debug\ResolveAssemblyReference.cache
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.RazorTemplateCommand.Configuration\obj\Debug\ArtOfNet.RazorTemplateCommand.Configuration.dll
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.RazorTemplateCommand.Configuration\bin\Debug\ArtOfNet.RazorTemplateCommand.Configuration.dll
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.RazorTemplateCommand.Configuration\bin\Debug\ArtOfNet.RazorTemplateCommand.Configuration.pdb
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.RazorTemplateCommand.Configuration\obj\Debug\ArtOfNet.RazorTemplateCommand.Configuration.pdb

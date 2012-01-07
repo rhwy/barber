@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+  <repository path="..\ArtOfNet.RazorTemplateCommand.Tests\packages.config" />
+  <repository path="..\ArtOfNet.RazorTemplateCommand.Framework\packages.config" />
+  <repository path="..\ArtOfNet.RazorTemplateCommand.PSSnapIn\packages.config" />
+  <repository path="..\ArtOfNet.RazorTemplateCommand.Cmd\packages.config" />
+  <repository path="..\..\Tests\ArtOfNet.RazorTemplateCommand.Cmd.Tests\packages.config" />
+  <repository path="..\..\Tests\ArtOfNet.RazorTemplateCommand.Client35IntegrationTest\packages.config" />
+</repositories>

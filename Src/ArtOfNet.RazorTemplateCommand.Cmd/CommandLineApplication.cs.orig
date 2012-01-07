@@ -1,0 +1,114 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Reflection;
+using ArtOfNet.RazorTemplateCommand.Cmd.Model;
+using Args;
+using ArtOfNet.RazorTemplateCommand.Cmd.Controller;
+
+namespace ArtOfNet.RazorTemplateCommand.Cmd
+{
+    public abstract class CommandLineApplication
+    {
+        protected string[] _args;
+        public string[] ApplicationArgumentsRaw
+        {
+            get
+            {
+                return _args;
+            }
+        }
+
+        private string _executable;
+
+        public string Executable
+        {
+            get
+            {
+                return _executable;
+            }
+        }
+
+        protected CommandLineApplication()
+        {
+            _args = Environment.GetCommandLineArgs().Skip(1).ToArray();
+            _executable = Environment.GetCommandLineArgs().Take(1).Single();
+        }
+
+        public CommandLineApplication(string[] args)
+        {
+            _args = args;
+            _executable = Environment.GetCommandLineArgs().Take(1).Single();
+        }
+
+        public void Run()
+        {
+            InvokeSpecialMethod("ApplicationStart");
+            Process();
+            InvokeSpecialMethod("ApplicationEnd");
+        }
+
+        private void Process()
+        {
+            IModelBindingDefinition<ControllerSelectionArgumentModel> definition = 
+                Args.Configuration.Configure<ControllerSelectionArgumentModel>();
+            ControllerSelectionArgumentModel model;
+            ApplicationContext context;
+
+            try
+            {
+                model = definition.CreateAndBind(_args);
+                context = new ApplicationContext(_args.Skip(1).ToArray());
+            }
+            catch
+            {
+                model = new ControllerSelectionArgumentModel();
+                model.ControllerName = "Render";
+                context = new ApplicationContext(_args);
+            }
+            
+            IRtcController controller;
+            switch (model.ControllerName.ToLowerInvariant())
+            {
+                case "help":
+                    controller = new HelpController();
+                    //IModelBindingDefinition<HelpArgumentModel> controllerDefinition =
+                    //    Args.Configuration.Configure<HelpArgumentModel>();
+                    ( (HelpController)controller ).ArgumentModel = Args.Configuration.Configure<HelpArgumentModel>().CreateAndBind(context.Args);
+                    break;
+                case "install":
+                    controller = new InstallController();
+                    //IModelBindingDefinition<InstallArgumentModel> controllerDefinition =
+                    //    Args.Configuration.Configure<InstallArgumentModel>();
+                    ( (InstallController)controller ).ArgumentModel = Args.Configuration.Configure<InstallArgumentModel>().CreateAndBind(context.Args);
+                    break;
+                default:
+                    controller = new RenderController();
+                    //IModelBindingDefinition<RenderArgumentModel> controllerDefinition =
+                    //    Args.Configuration.Configure<RenderArgumentModel>();
+                    ( (RenderController)controller ).ArgumentModel = Args.Configuration.Configure<RenderArgumentModel>().CreateAndBind(context.Args);
+                    break;
+            }
+
+            controller.Execute();
+            
+        }
+
+        private void InvokeSpecialMethod(string methodName)
+        {
+            InvokeSpecialMethod(methodName,null);
+        }
+
+        private void InvokeSpecialMethod(string methodName, object[] parameters)
+        {
+            Type t = this.GetType();
+            MethodInfo method = t.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+            if (method != null)
+            {
+                method.Invoke(this, parameters);
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,10 @@
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\bin\Release\ArtOfNet.NamedPipesHelper.dll
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\bin\Release\ArtOfNet.NamedPipesHelper.pdb
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\obj\Release\ResolveAssemblyReference.cache
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\obj\Release\ArtOfNet.NamedPipesHelper.dll
+E:\Sources\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\obj\Release\ArtOfNet.NamedPipesHelper.pdb
+F:\SOURCES\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\bin\Release\ArtOfNet.NamedPipesHelper.dll
+F:\SOURCES\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\bin\Release\ArtOfNet.NamedPipesHelper.pdb
+F:\SOURCES\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\obj\Release\ResolveAssemblyReference.cache
+F:\SOURCES\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\obj\Release\ArtOfNet.NamedPipesHelper.dll
+F:\SOURCES\bitbucket\artofnet-razortemplatecommand\Src\ArtOfNet.NamedPipesHelper\obj\Release\ArtOfNet.NamedPipesHelper.pdb

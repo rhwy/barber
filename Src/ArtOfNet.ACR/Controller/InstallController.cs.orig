@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ArtOfNet.RazorTemplateCommand.Cmd.Model;
+
+namespace ArtOfNet.RazorTemplateCommand.Cmd.Controller
+{
+    public class InstallController : RtcControllerBase<InstallArgumentModel>
+    {
+        public InstallController()
+        {
+
+        }
+
+        public override void Execute()
+        {
+            base.Execute();
+        }
+    }
+}

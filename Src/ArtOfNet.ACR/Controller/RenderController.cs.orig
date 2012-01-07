@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using ArtOfNet.RazorTemplateCommand.Framework;
+
+namespace ArtOfNet.RazorTemplateCommand.Cmd.Controller
+{
+    public class RenderController : RtcControllerBase<RenderArgumentModel>
+    {
+        public RenderController()
+        {
+
+        }
+
+        public override void Execute()
+        {
+            if (!string.IsNullOrEmpty(ArgumentModel.TemplateFile))
+            {
+                if (File.Exists(ArgumentModel.TemplateFile))
+                {
+                    ArgumentModel.TemplateContent = File.ReadAllText(ArgumentModel.TemplateFile);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(ArgumentModel.ModelFile))
+            {
+                if (File.Exists(ArgumentModel.ModelFile))
+                {
+                    ArgumentModel.ModelContent = File.ReadAllText(ArgumentModel.TemplateFile);
+                }
+            }
+
+
+            if (!string.IsNullOrEmpty(ArgumentModel.ResultFile) && File.Exists(ArgumentModel.ResultFile))
+            {
+                File.WriteAllText(ArgumentModel.ResultFile, result);
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+            
+        }
+    }
+}

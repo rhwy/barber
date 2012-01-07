@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>ArtOfNet.RazorTemplateCommand</id>
+    <version>1.0</version>
+    <authors>ArtOfNet</authors>
+    <owners>ArtOfNet</owners>
+    <licenseUrl>http://www.ArtOfNet.com</licenseUrl>
+    <projectUrl>http://www.ArtOfNet.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>a common line application using the asp.net Razor template engine</description>
+    <summary>This application is for using Razor templates from the command line, powershell</summary>
+    <language>en-US</language>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Bins\MergedFramework\ArtOfNet.RTC.Library.dll" target="lib" />
+	<file src="Bins\MergedFramework\artc.exe" target="lib" />
+  </files>
+</package>

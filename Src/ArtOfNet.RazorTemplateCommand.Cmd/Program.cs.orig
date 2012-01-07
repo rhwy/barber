@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization.Json;
+using System.Text;
+using ArtOfNet.RazorTemplateCommand.Framework;
+using System.Diagnostics;
+using Args.Help.Formatters;
+using Args;
+using System.IO.Pipes;
+
+namespace ArtOfNet.RazorTemplateCommand.Cmd
+{
+    
+    class Program
+    {
+        static void Main(string[] args)
+            {
+
+            RunByPipe(args);
+            var application = new RtcApplication(args);
+            //application.RunCommand();
+
+            //Console.WriteLine("Press enter to quit");
+            //Console.ReadLine();
+            //Console.Read();
+            }
+
+        static void RunByPipe(string[] args)
+        {
+            //if (args.Length > 0)
+            //{
+                using (NamedPipeClientStream pipeClient = new NamedPipeClientStream(".","InProc",PipeDirection.In))
+                {
+                    Console.WriteLine("Waiting for pipe command");
+                    pipeClient.Connect();
+
+                    Console.WriteLine("Connected : {0} clients",pipeClient.NumberOfServerInstances);
+                    using (StreamReader sr = new StreamReader(pipeClient))
+                    {
+                        string clientCommand;
+                        
+                        //Console.WriteLine(clientCommand.ToString();)
+                        while (( clientCommand = sr.ReadLine() ) != null)
+                        {
+                            Console.WriteLine("From Server : {0}", clientCommand);
+                        }
+                    }
+
+                    
+                }
+            //
+        }
+        
+        
+
+        static void Register(string target)
+            {
+            RegistrationHelper.ConsoleMode = true;
+            ActionAfterInstall register = new ActionAfterInstall();
+            register.CustomRegister(target);
+            }
+    }
+}

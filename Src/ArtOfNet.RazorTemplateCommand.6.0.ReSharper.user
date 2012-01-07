@@ -1,0 +1,64 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:packages.config" caret="0" fromTop="0" />
+      <File id="22AD6425-AFDE-4557-B40C-9A0056267D46/d:Samples/f:sample.ps1" caret="163" fromTop="9" />
+      <File id="6733820A-440A-4C88-8D1F-7B6BBED94CD4/f:DynamicXml.cs" caret="242" fromTop="8" />
+      <File id="22AD6425-AFDE-4557-B40C-9A0056267D46/f:ConsoleTests.cs" caret="0" fromTop="0" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RtcWrapCmdLet.cs" caret="1031" fromTop="27" />
+      <File id="606609A9-864D-4916-921A-0E5E9833E928/f:PipedChildProcess.cs" caret="0" fromTop="0" />
+      <File id="22AD6425-AFDE-4557-B40C-9A0056267D46/d:Model/f:PropertiesReaderTests.cs" caret="0" fromTop="0" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:app.config" caret="0" fromTop="0" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:Installer.cs" caret="0" fromTop="0" />
+      <File id="38FC0F70-214E-4526-B36D-BF3B3B25EEA7/f:RazorEngineHelper.cs" caret="4471" fromTop="18" />
+      <File id="38FC0F70-214E-4526-B36D-BF3B3B25EEA7/f:PropertiesReader.cs" caret="2500" fromTop="40" />
+      <File id="9F4EE7AC-7676-45C5-922E-648FE95A945F/d:Install/f:ActionAfterInstall.cs" caret="43" fromTop="1" />
+      <File id="9F4EE7AC-7676-45C5-922E-648FE95A945F/d:Install/f:RegistrationHelper.cs" caret="6954" fromTop="18" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:install.bat" caret="241" fromTop="3" />
+      <File id="F36432F1-A810-49B0-A630-CEEFF5A5A6A1/f:Program.cs" caret="2253" fromTop="18" />
+      <File id="9F4EE7AC-7676-45C5-922E-648FE95A945F/f:Program.cs" caret="423" fromTop="18" />
+      <File id="A3924D48-4FF7-4418-B7E8-E10D423CD18A/d:Controller/f:RenderController.cs" caret="1978" fromTop="19" />
+      <File id="A3924D48-4FF7-4418-B7E8-E10D423CD18A/f:CommandLineApplication.cs" caret="2477" fromTop="10" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:JsonCmdlet.cs" caret="595" fromTop="9" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RtcWrapperHelper.cs" caret="1552" fromTop="17" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RazerCmdlet.cs" caret="662" fromTop="4" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:install.bat" caret="17" fromTop="2" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RazerCmdlet.cs" caret="2069" fromTop="25" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RtcWrapperHelper.cs" caret="1581" fromTop="19" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RtcWrapperHelper.cs" caret="1465" fromTop="13" />
+      <File id="3930BE13-2901-42BD-80BF-1ED54BD18863/f:RazerCmdlet.cs" caret="1056" fromTop="13" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="bool" priority="31" />
+      <Item value="if" priority="31" />
+      <Item value="quotes" priority="31" />
+      <Item value="else" priority="31" />
+      <Item value="Quotes" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Management.Automation.SwitchParameter">
+      <Item value="IsPresent" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,8 @@
+<h1>Sources</h1>
+<i>generated 10/10/2011 19:27:13 </i>
+
+<h2>Rui Json</h2>
+<ul>
+	<li><a href=http://www.rui.fr>Blog</a></li>
+	<li><a href=http://www.artofnet.com>Company</a></li>
+</ul>

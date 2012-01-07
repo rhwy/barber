@@ -1,0 +1,14 @@
+﻿public enum ModelType
+{
+    Json,Dictionary,Properties,Csv,Xml,Binary,Scalar
+}
+
+public enum ActionType
+{
+    Render,Install, Help
+}
+
+public enum ServerMode
+{
+    NamedPipes, Rest
+}

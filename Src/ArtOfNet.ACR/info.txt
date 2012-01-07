@@ -1,0 +1,8 @@
+﻿// =======================================================================
+//		ACR project (Argument-Command-Result)
+// =======================================================================
+
+
+About:
+	ACR is a small framework for working with an adaptation of the MVC
+	pattern in console applications.
